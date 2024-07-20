@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
 }
 
 body {
@@ -8,19 +9,28 @@ font-family: 'TT Hoves' ;
 }
 
 section {
-padding: 0 112px;
+    padding: 0 calc(10.6vw - 15.8px);
+    margin-bottom: calc(11.1vw + 18.4px);
+}
+
+
+.courseInfoContainer {
+    background-image: url(../img/html_css_js\ 1.png) ;
+    background-repeat: no-repeat;
+    background-position: top calc(4.9vw + 58.7px) right calc(6.1vw - 19.7px);
+    background-size: 30vw;
 }
 
 .logo {
 margin-top: 37px;
-width: 295px;
+width: calc(8.7vw + 183px);
 }
 
 .courseInfo {
-margin-top: 85px;
-margin-bottom: 76px;
+margin-top: calc(6.3vw + 4.4px);
+margin-bottom: calc(3.1vw + 36.4px);
 font-weight: 700px;
-font-size: 21px;
+font-size: calc(0.6vw + 14px);
 line-height: 140%;
 display: flex;
 gap: 30px 160px;
@@ -38,18 +48,17 @@ flex-wrap: wrap;
 
 h1 {
     font-family: 'Chava';
-font-size: 80px;
+font-size: calc(4.2vw + 26.2px);
 line-height: 110%;
 }
 
 p {
-    font-size: 27px;
+    font-size: calc(1vw + 14.3px);
     font-weight: 300;
     line-height: 140%;
     text-align: left;
-    margin-top: 40px;
+    margin-top: calc(2.2vw + 11.7px);
     margin-bottom: 20px;
-    flex-wrap: wrap;
 }
 
 .cta {
@@ -86,8 +95,10 @@ font-weight: 500;
 line-height: 117%;
 text-align: center;
 
-}
 
+
+
+}
 .smile {
     width: 210px;
 height: 210px;
@@ -104,8 +115,6 @@ text-align: left;
 }
 
 .for {
-
-    height: 506px;
 font-size: 27px;
 font-weight: 400;
 line-height: 140%;
@@ -117,16 +126,14 @@ display: flex;
 }
 .backender {
     width: 450px;
-    height: 506px;
 font-size: 27px;
-font-weight: 400;
 line-height: 140%;
 text-align: left;
 }
 
 .student {
     width: 450px;
-    height: 506px;
+
 font-size: 27px;
 font-weight: 400;
 line-height: 140%;
@@ -152,9 +159,6 @@ text-align: left;
 }
 
 .header {
-    width: 769px;
-height: 136px;
-left: 120px;
 font-size: 58px;
 font-weight: 500;
 line-height: 117%;
@@ -163,3 +167,153 @@ text-align: left;
 margin-top: 160px;
 }
 
+@media (max-width:975) {
+    p {
+        width: 100%;
+    }
+}
+
+.timer {
+    background-color:#6E3ABA ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 57px ;
+    padding: 84px 0;
+    margin-top: 700px;
+}
+
+.timer h2 {
+font-size: calc(2vw + 26.5px);
+font-weight: 700;
+line-height: 117%;
+color: white;
+}
+
+.TimeCards {
+    display: flex;
+    gap: 84px;
+}
+
+.timecard .timetitle {
+    font-family: "Chava";
+    font-size: 174px;
+    font-weight: 400;
+    line-height: 187.05px;
+    text-align: left;
+}
+
+.timecard .subtitle {
+text-align: center;
+font-size: 27px;
+font-weight: 500;
+line-height: 31.81px;
+padding-left: 12px;
+}
+
+
+.list h2 {
+font-size: 58px;
+font-weight: 500;
+line-height: 68.32px;
+text-align: left;
+
+}
+
+.school {
+font-size: 27px;
+font-weight: 400;
+line-height: 37.8px;
+text-align: left;
+display: flex;
+flex-wrap: wrap;
+gap: 90px 120px;
+padding: 90px;
+}
+
+.school h3 {
+font-size: 27px;
+font-weight: 600;
+line-height: 37.8px;
+text-align: left;
+
+}
+
+
+
+/* legend start */
+
+.legendContainer h2 {
+    margin-bottom: calc(5.5vw + 19.2px);
+}
+
+.legend {
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.legendimg {
+    width: calc(7.7vw + 300px);
+}
+.legendinfo {
+    flex-grow: 1000;
+    width: 566px;
+}
+.legendName h3 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 121%;
+}
+
+.legendName p {
+font-size: calc(1vw + 14.2px);
+line-height: 140%;
+width:  calc(26.3vw + 229px);
+}
+
+.legendName {
+    margin-bottom: calc(5.5vw + 19.2px);
+}
+
+.legendCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: calc(1.1vw - 25.8px) calc(8.8vw - 23.3px) ;
+grid-template-areas:  
+                    "Icon_case Icon_winning_cup"
+                    "Icon_hearts Icon_keyboard";
+                
+}
+
+.legendCard p {
+    font-size: calc(0.6 + 14px);
+    font-weight: 400;
+    line-height: 140%;
+    width: calc(10.4vw + 117px);
+    margin-top: 10px;
+}
+
+legendCard:nth-last-of-type(1){
+    grid-area: Icon_case;
+}
+legendCard:nth-last-of-type(2){
+    grid-area: Icon_winning_cup;
+}
+legendCard:nth-last-of-type(3){
+    grid-area: Icon_hearts ;
+}
+legendCard:nth-last-of-type(4) {
+    grid-area:Icon_keyboard ;
+}
+
+
+/* legend end */
+@media (max-width: 1200px) {
+    .legendCards {
+        grid-template-areas: 
+        "Icon_case Icon_keyboard"
+        "Icon_winning_cup Icon_hearts" ;
+    }
+}
