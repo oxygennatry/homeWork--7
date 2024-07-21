@@ -180,7 +180,6 @@ margin-top: 160px;
     align-items: center;
     gap: 57px ;
     padding: 84px 0;
-    margin-top: 700px;
 }
 
 .timer h2 {
@@ -197,15 +196,17 @@ color: white;
 
 .timecard .timetitle {
     font-family: "Chava";
-    font-size: 174px;
+    font-size: calc(12.6vw + 12.7px);
     font-weight: 400;
     line-height: 187.05px;
     text-align: left;
+    color: #2F1D4E;
+
 }
 
 .timecard .subtitle {
 text-align: center;
-font-size: 27px;
+font-size: calc(1.9vw + 3px);
 font-weight: 500;
 line-height: 31.81px;
 padding-left: 12px;
@@ -213,30 +214,33 @@ padding-left: 12px;
 
 
 .list h2 {
-font-size: 58px;
+font-size: calc(2.7vw + 24px);
 font-weight: 500;
 line-height: 68.32px;
 text-align: left;
-
+}
+.school {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 90px 120px;
+    }
+.school .infoSchool {
+    width: 428px ;
 }
 
-.school {
-font-size: 27px;
+.infoSchool p {
+    font-size: calc(1vw + 12.3px);
 font-weight: 400;
 line-height: 37.8px;
-text-align: left;
-display: flex;
-flex-wrap: wrap;
-gap: 90px 120px;
-padding: 90px;
-}
+    }
 
 .school h3 {
-font-size: 27px;
-font-weight: 600;
-line-height: 37.8px;
-text-align: left;
-
+    font-size: calc(1vw + 12.3px);
+    font-weight: 600;
+    line-height: 37.8px;
+    text-align: left;
 }
 
 
@@ -256,10 +260,12 @@ text-align: left;
 .legendimg {
     width: calc(7.7vw + 300px);
 }
+
 .legendinfo {
-    flex-grow: 1000;
+    flex-grow: 1;
     width: 566px;
 }
+
 .legendName h3 {
     font-size: 48px;
     font-weight: 700;
@@ -267,9 +273,9 @@ text-align: left;
 }
 
 .legendName p {
-font-size: calc(1vw + 14.2px);
-line-height: 140%;
-width:  calc(26.3vw + 229px);
+    font-size: calc(1vw + 14.2px);
+    line-height: 140%;
+    width: calc(26.3vw + 229px);
 }
 
 .legendName {
@@ -280,32 +286,42 @@ width:  calc(26.3vw + 229px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: calc(1.1vw - 25.8px) calc(8.8vw - 23.3px) ;
-grid-template-areas:  
-                    "Icon_case Icon_winning_cup"
-                    "Icon_hearts Icon_keyboard";
-                
+    gap: calc(1.1vw - 25.8px) calc(8.8vw - 23.3px);
+    grid-template-areas:  
+        "Icon_case Icon_winning_cup"
+        "Icon_hearts Icon_keyboard";
 }
 
 .legendCard p {
-    font-size: calc(0.6 + 14px);
+    font-size: calc(0.6vw + 14px);
     font-weight: 400;
     line-height: 140%;
     width: calc(10.4vw + 117px);
     margin-top: 10px;
 }
 
-legendCard:nth-last-of-type(1){
+.legendCard:nth-of-type(1) {
     grid-area: Icon_case;
 }
-legendCard:nth-last-of-type(2){
+
+.legendCard:nth-of-type(2) {
     grid-area: Icon_winning_cup;
 }
-legendCard:nth-last-of-type(3){
-    grid-area: Icon_hearts ;
+
+.legendCard:nth-of-type(3) {
+    grid-area: Icon_hearts;
 }
-legendCard:nth-last-of-type(4) {
-    grid-area:Icon_keyboard ;
+
+.legendCard:nth-of-type(4) {
+    grid-area: Icon_keyboard;
+}
+
+@media (max-width: 1200px) {
+    .legendCards {
+        grid-template-areas: 
+            "Icon_case Icon_keyboard"
+            "Icon_winning_cup Icon_hearts";
+    }
 }
 
 
@@ -317,3 +333,39 @@ legendCard:nth-last-of-type(4) {
         "Icon_winning_cup Icon_hearts" ;
     }
 }
+
+.diplom {
+    margin-top: 173px;
+}
+
+ .maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+   
+}
+
+.imgdip {
+    flex: 1;
+}
+.diplomimg {
+    width: 430px;
+height: 300px;
+
+}
+.dipText {
+    flex: 2;
+}
+.diplom h4 {
+font-size: calc(2.7vw + 24px);
+font-weight: 500;
+line-height: 68.32px;
+}
+
+.maindiv p {
+font-size: calc(1vw + 14.3px);
+font-weight: 400;
+line-height: 37.8px;
+} 
+
+
