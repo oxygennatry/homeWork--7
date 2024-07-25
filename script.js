@@ -1,5 +1,5 @@
 function saleTime(){
-let endDate = new Date(2024,6,22);
+let endDate = new Date(2024,6,31);
 let nowDate = new Date();
 let finish = endDate - nowDate
 
@@ -28,3 +28,4 @@ if (finish <= 0){
 saleTime()
 
 setInterval(()=>saleTime(),1000)
+

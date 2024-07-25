@@ -6,7 +6,8 @@
     <title>TehnikumSchool</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
-    <link href=" https://fonts.cdnfonts.com/css/chava " rel="stylesheet">            
+    <link href=" https://fonts.cdnfonts.com/css/chava " rel="stylesheet">  
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">          
 </head>
 <body>
     <section class="courseInfoContainer">
@@ -142,6 +143,139 @@
         </div>
     </div>
 </section>
+
+<section class="programm">
+<div class="border">
+    <h2>Программа курса</h2>
+    <img src="./img/course-program-corner.svg" alt="corner" class="borderImg">
+    <ul class="lessons">
+        <li>Урок №1: Знакомство с html, css, js и разница между ними</li>
+        <li>Урок №2: Виды сайтов и первые термины</li>
+        <li>Урок №3: CSS - базовые стили и их подключение. Палитра</li>
+        <li>Урок №4: HTML [Таблицы]</li>
+        <li>Урок №5: HTML [Формы]</li>
+        <li>Урок №6: CSS [Intermediate]</li>
+    </ul>
+    <button class="purple desctopBtn">Получить полную программу курса</button>
+</div>
+<button class="purple hiddenBtn">Получить полную программу курса</button>
+</section>
+
+<section class="income">
+    <div class="verstal">
+        <div class="titleh2">
+            <h2>Сколько может зарабатывать Веб-Верстальщик?</h2>
+        </div>
+        <div class="paragraf">
+            <p>По данным сайта hh.uz большие компании готовы платить начинающим Верстальщикам от 300$. Тебе лишь нужно набираться опыта и твой доход будет расти с каждым разом . А мы готовы тебе помочь в этом!</p>
+        </div>
+        <div class="imgprice">
+            <img src="./img/pic_hh.svg" alt="price" class="imgpr">
+        </div>
+    </div>
+</section>
+
+
+<section class="feedback">
+<h2>Отзывы наших студентов</h2>
+<div class="feedback_cards">
+</div>
+
+
+<div class="splide" role="group" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+          <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="feedback_card">
+                    <div>
+                        <img src="./img/icon_youtube.svg" alt="" class="icon_youtube">
+                    <p>
+                        Я пришел в Техникум чтобы сменить профессию на front-end разработчика и окончательно расстаться с предыдущим местом работы. Пробуйте себя во всем, ничего не бойтесь и у вас всё получится! 
+                    </p>
+                    </div>
+                    <div class="feedback_user">
+                        <img src="./img/Frame 256.svg" alt="">
+                        <p>Руслан Мухутдинов</p>
+                    </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="feedback_card">
+                    <div>
+                        <img src="./img/icon_youtube.svg" alt="" class="icon_youtube">
+                    <p>
+                        Я выбрал курс веб-верстальщика, потому что мне это нравится и это круто. После окончания курса, за хорошую учебу, меня пригласили на стажировку в Техникум. Будущее за IT и я не жалею что выбрал эту сферу!
+                    </p>
+                    </div>
+                    <div class="feedback_user">
+                        <img src="./img/Frame 257.svg" alt="">
+                        <p>Юлдашев Искандер</p>
+                    </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="feedback_card">
+                    <div>
+                        <img src="./img/icon_youtube.svg" alt="" class="icon_youtube">
+                    <p>
+                        Я увидел что Техникум всех приглашает на бесплатную лекцию по программированию. Меня это заинтересовало, после лекции я понял, что это хороший старт для карьеры. После курса я планирую дальше развиваться и двигаться вперед в этой сфере.
+                    </p>
+                    </div>
+                    <div class="feedback_user">
+                        <img src="./img/Frame 258.svg" alt="">
+                        <p>Махмудов Джахонгир</p>
+                    </div>
+                </div>
+              </li>
+          </ul>
+    </div>
+  </div>
+</section>
+
+<section class="aboutUs">
+    <h2>Немного о нас</h2>
+    <div class="us">
+        <div class="cup">
+            <img src="./img/image 1342.svg" alt="cup">
+        </div>
+        <div class="park">
+            <p>Резиденты IT-парка и одна из самых успешных DIGITAL-школ в Узбекистане</p>
+        </div>
+        <div class="two">
+            <h3>> 2500</h3>
+            <p>выпускников</p>
+        </div>
+        <div class="direction">
+            <h3>10 направлений </h3>
+            <p>обучения в сфере Digital</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script src="./splide-4.1.3/dist/js/splide.min.js"></script>
     <script src="./script.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' , {
+            gap: "30px",
+            arrows: false,
+            breakpoints:{
+                1920: {
+                    perPage: 3
+                },
+                975:{
+                    perPage: 2
+                },
+                745:{
+                    perPage: 1
+                }
+            }
+          });
+          splide.mount();
+        } );
+      </script>
 </body>
 </html>
