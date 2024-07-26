@@ -434,7 +434,7 @@ left: calc(6.7vw - 1.2px);
     /* feedback start */
 .feedback h2{
     margin-bottom: calc(2.2vw + 11.7px);
-font-size: 58px;
+font-size: calc(2.6vw + 24.2px);
 font-weight: 500;
 line-height: 68.32px;
 
@@ -483,7 +483,7 @@ line-height: 68.32px;
 /* cup start */
 
 .aboutUs h2 {
-    font-size: 58px;
+    font-size: calc(2.6vw + 24.2px);
 font-weight: 500;
 line-height: 68.32px;
 }
@@ -513,12 +513,32 @@ left: 121px;
     line-height: 37.8px;
 }
 
-
-
 /* cup end */
 
+/* photoslide start */
 
 
+
+.photoslide h2 {
+    font-size: calc(2.6vw + 24.2px);
+    font-weight: 500;
+    line-height: 68.32px;
+}
+
+.photoslide p {
+    width: calc(46.2vw + 157.2px);
+font-size: 27px;
+font-weight: 400;
+line-height: 37.8px;
+}
+
+.photoslide img {
+    width: calc(19.7vw + 255px);
+height: calc(19.7vw + 255px);
+}
+
+
+/*  photoslide end */
 
 
 

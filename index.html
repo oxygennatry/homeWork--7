@@ -253,6 +253,29 @@
 </section>
 
 
+<section class="photoslide">
+    <div class="text">
+        <div>
+        <h2>Все еще сомневаешься?</h2>
+    </div>
+    <div>
+        <p>Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
+    </div>
+    <div class="splide slider2" role="group" aria-label="Базовый пример HTML Splide">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="./img/Rectangle 76.svg" alt=""></li>
+                  <li class="splide__slide"><img src="./img/JM_photo_101 1.svg" alt=""></li>
+                  <li class="splide__slide"><img src="./img/JM_photo_153.png" alt=""></li>
+                  <li class="splide__slide"><img src="./img/slider_image_03.png" alt=""></li>
+                  <li class="splide__slide"><img src="./img/JM_photo_153 (2).svg" alt=""></li>
+              </ul>
+        </div>
+      </div>
+
+    </div>
+</section>
+
 
 
 <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
@@ -275,7 +298,24 @@
             }
           });
           splide.mount();
+          var splide = new Splide( '.splide.slider2' , {
+            gap:"26px",
+            arrows: false,
+            breakpoints:{
+                1920: {
+                    perPage: 2
+                },
+                975:{
+                    perPage: 2
+                },
+                745:{
+                    perPage: 1
+                }
+            }
+          });
+          splide.mount();
         } );
       </script>
+      
 </body>
 </html>
